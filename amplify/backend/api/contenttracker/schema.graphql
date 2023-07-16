@@ -1,0 +1,33 @@
+type DevTo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  profile_name: String
+  article_title: String
+  pub_date: AWSDate
+  article_url: AWSURL
+  views: Int
+  comments: String
+  engagement_rate: Int
+}
+
+type Hashnode @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  profile_name: String
+  article_title: String
+  pub_date: AWSDate
+  article_url: AWSURL
+  views: Int
+  comments: String
+  engagement_rate: Int
+}
+
+type Medium @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  profile_name: String!
+  article_title: String!
+  pub_date: AWSDate!
+  article_url: AWSURL!
+  views: Int
+  comments: String
+  engagement_rate: Int
+}
+ 
