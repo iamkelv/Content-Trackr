@@ -24,7 +24,6 @@ function HomeCard({ items }) {
       <Grid
         templateColumns="1fr 1fr 1fr"
         // templateRows="10rem 10rem"
-
         gap={tokens.space.xxl}
         justifyContent={'center'}
       >

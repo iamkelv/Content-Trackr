@@ -70,7 +70,7 @@ export const MainNav = () => {
         <View>
           <Link
             color={tokens.colors.brand.secondary[60]}
-            href="/about"
+            href="/auth"
             padding={'15px 25px'}
           >
             Login

@@ -39,7 +39,7 @@ export default function Home() {
     },
   ]
   return (
-    <Flex direction={'column'} gap={'2rem'}>
+    <Flex direction={'column'} width={'100%'} gap={'2rem'}>
       <HeroSection />
       <Jumbotron />
       <WhyChoose />

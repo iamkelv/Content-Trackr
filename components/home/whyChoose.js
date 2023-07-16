@@ -5,8 +5,10 @@ function WhyChoose() {
   return (
     <Flex
       direction={'column'}
-      maxWidth={'30%'}
+      maxWidth={{ large: '30%', medium: '100%' }}
       margin={'5% auto'}
+      justifyContent={'center'}
+
       // marginTop={''}
     >
       <Heading level={1} fontWeight={'bolder'}>
