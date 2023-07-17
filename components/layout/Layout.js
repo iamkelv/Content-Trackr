@@ -12,9 +12,9 @@ function Layout({ children }) {
       padding={' 0 10%'}
       width={'100%'}
     >
-      <MainNav />
+      {/* <MainNav /> */}
       <div>{children}</div>
-      <MainFooter />
+      {/* <MainFooter /> */}
     </Flex>
   )
 }
