@@ -32,15 +32,17 @@ function SideNav() {
         justifyContent={'center'}
       >
         <Flex flex={1} padding={tokens.space.medium} direction={'column'}>
-          <Image
-            alt="logo"
-            src="./assets/img/logo.png"
-            objectFit="initial"
-            maxWidth={'100%'}
-            objectPosition="50% 50%"
-            backgroundColor="initial"
-            opacity="100%"
-          />
+          <Link href="/admin">
+            <Image
+              alt="logo"
+              src="./assets/img/logo.png"
+              objectFit="initial"
+              maxWidth={'100%'}
+              objectPosition="50% 50%"
+              backgroundColor="initial"
+              opacity="100%"
+            />
+          </Link>
         </Flex>
         <Flex flex={4} direction={'column'} gap={0} padding={'0'}>
           <View padding={tokens.space.small}>MENU</View>

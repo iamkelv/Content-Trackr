@@ -51,17 +51,17 @@ export const MainNav = () => {
           </Link>
         </View>
         <View>
-          <Link color={textColor} padding={'15px 25px'} href="/about">
+          <Link color={textColor} padding={'15px 25px'} href="/auth">
             About
           </Link>
         </View>
         <View>
-          <Link color={textColor} padding={'15px 25px'} href="/tour">
+          <Link color={textColor} padding={'15px 25px'} href="/auth">
             Tour
           </Link>
         </View>
         <View>
-          <Link color={textColor} padding={'15px 25px'} href="/blog">
+          <Link color={textColor} padding={'15px 25px'} href="/auth">
             Blog
           </Link>
         </View>
@@ -82,7 +82,7 @@ export const MainNav = () => {
             color={tokens.colors.white}
             padding={'15px 25px'}
             backgroundColor={tokens.colors.brand.secondary[60]}
-            href="/tour"
+            href="/auth"
           >
             Register
           </Link>

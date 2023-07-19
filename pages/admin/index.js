@@ -21,7 +21,7 @@ import SideNav from '@/components/admin/SideNav'
 import AdminTopNav from '@/components/admin/AdminTopNav'
 import DashboardContent from '@/components/admin/DashboardContent'
 import AdminLayout from '@/components/admin/AdminLayout'
-
+import { withAuthenticator } from '@aws-amplify/ui-react'
 function AdminPage() {
   return (
     <AdminLayout>
@@ -30,4 +30,4 @@ function AdminPage() {
   )
 }
 
-export default AdminPage
+export default withAuthenticator(AdminPage)

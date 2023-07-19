@@ -31,6 +31,7 @@ function FaqSection() {
       <Flex>
         <Expander type="single" isCollapsible={true}>
           <ExpanderItem
+            marginTop={'medium'}
             title={<CustomTitle title={'What is Doc.io?'} />}
             value="item-1"
             fontSize={'xx-large'}
@@ -63,7 +64,7 @@ function FaqSection() {
                 title={'Can I connect multiple platforms to Doc.io?'}
               />
             }
-            value="item-2"
+            value="item-3"
           >
             <Text fontSize={tokens.fontSizes.large}>
               Yes, Doc.io supports integration with multiple platforms. You can
@@ -78,7 +79,7 @@ function FaqSection() {
                 title={'Is my personal information secure with Doc.io?'}
               />
             }
-            value="item-2"
+            value="item-4"
           >
             <Text fontSize={tokens.fontSizes.large}>
               {' '}
@@ -96,7 +97,7 @@ function FaqSection() {
                 }
               />
             }
-            value="item-2"
+            value="item-5"
           >
             <Text fontSize={tokens.fontSizes.large}>
               {' '}
@@ -112,7 +113,7 @@ function FaqSection() {
                 title={'Can I get insights on how my articles are performing?'}
               />
             }
-            value="item-2"
+            value="item-6"
           >
             <Text fontSize={tokens.fontSizes.large}>
               {' '}
@@ -129,7 +130,7 @@ function FaqSection() {
                 title={'Can I access Doc.io on different devices?'}
               />
             }
-            value="item-2"
+            value="item-7"
           >
             <Text fontSize={tokens.fontSizes.large}>
               {' '}
@@ -140,7 +141,7 @@ function FaqSection() {
           </ExpanderItem>
           <ExpanderItem
             title={<CustomTitle title={'How do I get started with Doc.io?'} />}
-            value="item-2"
+            value="item-8"
           >
             <Text fontSize={tokens.fontSizes.large}>
               To get started, simply sign up for an account on Doc.io and
@@ -157,7 +158,7 @@ function FaqSection() {
                 }
               />
             }
-            value="item-2"
+            value="item-9"
           >
             <Text fontSize={tokens.fontSizes.large}>
               {' '}

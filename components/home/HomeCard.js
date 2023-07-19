@@ -22,7 +22,11 @@ function HomeCard({ items }) {
       backgroundColor={tokens.colors.red}
     >
       <Grid
-        templateColumns="1fr 1fr 1fr"
+        templateColumns={{
+          large: '1fr 1fr 1fr',
+          medium: '1fr 1fr',
+          base: '1fr',
+        }}
         // templateRows="10rem 10rem"
         gap={tokens.space.xxl}
         justifyContent={'center'}

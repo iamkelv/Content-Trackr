@@ -13,7 +13,11 @@ function MainFooter() {
   const { tokens } = useTheme()
   return (
     <Grid
-      templateColumns="2fr 1fr 1fr 1fr"
+      templateColumns={{
+        large: '2fr 1fr 1fr 1fr',
+        medium: '2fr 1fr 1fr',
+        base: '2fr 1fr',
+      }}
       gap={tokens.space.small}
       marginTop={'5%'}
     >
@@ -26,8 +30,10 @@ function MainFooter() {
             objectPosition="50% 50%"
             backgroundColor="initial"
             height="100%"
-            width="100%"
-            maxWidth={'30%'}
+            width={'100%'}
+            // width={{ medium: '100%', base: '200px' }}
+            // height={{ medium: '100%', base: '50px' }}
+            maxWidth={{ large: '30%', medium: '30%', base: '70%' }}
             opacity="100%"
           />
         </Flex>

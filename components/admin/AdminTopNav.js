@@ -18,8 +18,10 @@ import { GrNotification } from 'react-icons/gr'
 import { IoMdArrowDropdown } from 'react-icons/io'
 import CardUI from '../ui/Card'
 import Notifications from './Notification'
+import { useRouter } from 'next/router'
 
 function AdminTopNav() {
+  const route = useRouter()
   const { tokens } = useTheme()
 
   return (
@@ -90,7 +92,9 @@ function AdminTopNav() {
               <MenuItem>
                 <Link href="admin/profile">Profile</Link>
               </MenuItem>
-              <MenuItem>Logout</MenuItem>
+              <MenuItem onClick={() => route.replace({ host: '/auth' })}>
+                Logout
+              </MenuItem>
             </Menu>
           </View>
         </Flex>

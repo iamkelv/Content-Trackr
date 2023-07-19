@@ -10,11 +10,12 @@ function Layout({ children }) {
       direction={'column'}
       // overflow={'hidden'}
       padding={' 0 10%'}
+      margin={'0 auto'}
       width={'100%'}
     >
-      {/* <MainNav /> */}
+      <MainNav />
       <div>{children}</div>
-      {/* <MainFooter /> */}
+      <MainFooter />
     </Flex>
   )
 }

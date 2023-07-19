@@ -13,7 +13,12 @@ import React from 'react'
 function HeroSection() {
   const { tokens } = useTheme()
   return (
-    <Grid templateColumns="1fr 1fr" gap={tokens.space.small}>
+    <Grid
+      templateColumns={{ medium: '1fr 1fr', base: '1fr' }}
+      gap={tokens.space.small}
+      order={'revert'}
+      style={{ gridAutoFlow: 'column' }}
+    >
       <Flex
         direction={'column'}
         gap={'medium'}
@@ -23,7 +28,11 @@ function HeroSection() {
           <Heading
             level={2}
             maxWidth={{ large: '60%', medium: '100%' }}
-            fontSize={tokens.fontSizes.xxxxl}
+            // fontSize={{
+            //   large: tokens.fontSizes.xxxxl,
+            //   medium: tokens.fontSizes.xxl,
+            //   base: tokens.fontSizes.medium,
+            // }}
             fontWeight={'bolder'}
             fontFamily={'inter'}
           >
@@ -32,9 +41,12 @@ function HeroSection() {
         </View>
         <View>
           <Text
-            width={'70%'}
+            width={{ medium: '70%', base: '100%' }}
             lineHeight={'2em'}
-            fontSize={tokens.fontSizes.medium}
+            fontSize={{
+              medium: tokens.fontSizes.medium,
+              base: tokens.fontSizes.small,
+            }}
           >
             Are you struggling to keep track of all your content marketing
             efforts?Do you find it challenging to measure the impact and
@@ -58,6 +70,7 @@ function HeroSection() {
         position={'relative'}
         backgroundColor={tokens.colors.green}
         width={'100%'}
+        display={{ medium: 'flex', base: 'none' }}
       >
         <Image
           alt="User "
@@ -66,9 +79,12 @@ function HeroSection() {
           objectPosition="50% 50%"
           backgroundColor="initial"
           opacity="100%"
+          width={{ medium: 'inherit', base: '250px' }}
+          height={{ medium: 'inherit', base: '250px' }}
           minWidth={'fit-content'}
         />
         <Image
+          display={{ medium: 'flex', base: 'none' }}
           alt="User "
           src="./assets/img/rate.png"
           objectFit="initial"
@@ -80,6 +96,7 @@ function HeroSection() {
           position={'absolute'}
         />{' '}
         <Image
+          display={{ medium: 'flex', base: 'none' }}
           alt="User "
           position={'absolute'}
           left={'40%'}

@@ -11,7 +11,7 @@ function WhyChoose() {
 
       // marginTop={''}
     >
-      <Heading level={1} fontWeight={'bolder'}>
+      <Heading level={2} textAlign={'center'} fontWeight={'bolder'}>
         Why choose <span className="text-[rgb(191,64,191)]">Doc.io</span>
       </Heading>
       <Text>
